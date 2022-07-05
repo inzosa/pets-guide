@@ -1,0 +1,60 @@
+{
+  "result": [
+    {
+      "id": 0,
+      "type": "cat",
+      "origin": "노르웨이",
+      "name": "노르웨이 숲 고양이",
+      "desc": "노르웨이 숲 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1581861503065-5b0da8756921?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 1,
+      "type": "cat",
+      "origin": "이란",
+      "name": "페르시안 고양이",
+      "desc": "페르시안 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1460572894071-bde5697f7197?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 2,
+      "type": "cat",
+      "origin": "러시아",
+      "name": "러시안 블루 고양이",
+      "desc": "러시안 블루 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1608643088072-69b035cc8822?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 3,
+      "type": "cat",
+      "origin": "미국",
+      "name": "벵갈 고양이",
+      "desc": "벵갈 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1598463166228-c0f90d180918?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 4,
+      "type": "cat",
+      "origin": "태국",
+      "name": "샴 고양이",
+      "desc": "샴 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1472491235688-bdc81a63246e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 5,
+      "type": "cat",
+      "origin": "토론토",
+      "name": "스핑크스 고양이",
+      "desc": "스핑크스 고양이는 고양이의 한 품종이다.",
+      "src": "https://images.unsplash.com/photo-1547565295-182fb8657b6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 6,
+      "type": "dog",
+      "origin": "일본",
+      "name": "시바견",
+      "desc": "시바견은 일본 고유의 견종이다.",
+      "src": "https://images.unsplash.com/photo-1597444442865-65bdcd9773b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    }
+  ]
+}
