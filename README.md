@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=JavaScript&logoColor=black">
 <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=React&logoColor=black">
 <img src="https://img.shields.io/badge/styled components-DB7093?style=plastic&logo=styled components&logoColor=black">
-<<<<<<< HEAD
+
 <img src="https://img.shields.io/badge/React Router-CA4245?style=plastic&logo=React Router&logoColor=black">
 
 # 주요 기능
