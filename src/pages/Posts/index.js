@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { Pagination } from '../../component/molecules/Pagination';
 import { PaginationContainer, PostContainer } from './style';
 import { ContentWrap } from '../style';
+import axios from 'axios';
 
 const Post = () => {
   const [posts, setPosts] = useState([]);
@@ -17,11 +18,7 @@ const Post = () => {
   const offset = (page - 1) * limit;
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((res) => res.json())
-      .then((data) => {
-        setPosts(data);
-      });
+    axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => setPosts(res.data));
   }, []);
 
   const searchInput = (e) => {
@@ -29,12 +26,10 @@ const Post = () => {
   };
 
   const searchBtn = () => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-      .then((res) => res.json())
-      .then((result) => {
-        const newPost = result.filter((post) => post.title.indexOf(search) !== -1);
-        setPosts(newPost);
-      });
+    axios.get('https://jsonplaceholder.typicode.com/posts').then((res) => {
+      const newPost = res.data.filter((post) => post.title.indexOf(search) !== -1);
+      setPosts(newPost);
+    });
   };
 
   return (

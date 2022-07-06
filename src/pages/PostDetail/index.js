@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import PostView from '../../component/organisms/Contents/PostView';
@@ -11,11 +12,9 @@ const PostDetail = () => {
   const [post, setPost] = useState({});
 
   useEffect(() => {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${no}`)
-      .then((res) => res.json())
-      .then((result) => {
-        setPost(result);
-      });
+    axios.get(`https://jsonplaceholder.typicode.com/posts/${no}`).then((res) => {
+      setPost(res.data);
+    });
   }, [no]);
   return (
     <>

@@ -11,8 +11,6 @@ const LogoContainer = styled.div`
   overflow: hidden;
 `;
 
-const StyledLogo = styled.img``;
-
 export const Logo = () => {
   return (
     <LogoContainer>
