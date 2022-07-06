@@ -12,11 +12,11 @@
 # 주요 기능
 
 `디자인 패턴`
+
 ![아토믹 디자인 패턴](https://user-images.githubusercontent.com/66199817/177449303-ccc75cd1-fed1-45db-9422-5845f1c608b4.JPG)
 
 - 아토믹 디자인 패턴으로 만들어 봤습니다.
 
 `🌝메인화면`
-![메인화면](https://user-images.githubusercontent.com/66199817/177451296-39d455e6-22c4-4cc7-ad07-d4429f649272.png)
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/66199817/177454853-93cad3b5-899e-48eb-bf81-dcd1bfd9fa7c.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/66199817/177456907-37d74ab2-1166-422e-b81f-2dde61fda7b2.gif)
