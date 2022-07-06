@@ -21,7 +21,7 @@
 
 `🌝메인화면`
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/66199817/177456907-37d74ab2-1166-422e-b81f-2dde61fda7b2.gif)
+![메인화면](https://user-images.githubusercontent.com/66199817/177456907-37d74ab2-1166-422e-b81f-2dde61fda7b2.gif)
 
 - 버튼을 클릭하면 이미지 하나씩 넘어가는 모습을 보여줍니다.
 - 버튼을 클릭하면 이미지가 전체적으로 천천히 넘어가는 모습을 보여줍니다.
@@ -31,6 +31,10 @@
 ![애완동물](https://user-images.githubusercontent.com/66199817/177472501-7a54cfd9-43fd-4fd0-a6ab-4d8e68527598.JPG)
 
 - 애완동물 목록을 보여주고, 클릭하면 정보를 보여줍니다.
+
+![펫 카테고리](https://user-images.githubusercontent.com/66199817/177496427-eeecb7fd-d2e7-4e8d-b7de-a7c36a9d1ee5.gif)
+
+- 애완동물 카테고리에 맞게 동물들을 보여준다.
 
 ![애완동물 검색](https://user-images.githubusercontent.com/66199817/177472959-ed1de269-9cf5-4a5d-9758-042cca7ad930.JPG)
 
