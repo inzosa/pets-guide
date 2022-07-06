@@ -55,6 +55,54 @@
       "name": "시바견",
       "desc": "시바견은 일본 고유의 견종이다.",
       "src": "https://images.unsplash.com/photo-1597444442865-65bdcd9773b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 7,
+      "type": "dog",
+      "origin": "영국",
+      "name": "웰시코기",
+      "desc": "웰시코기는 영국 고유의 견종이다.",
+      "src": "https://images.unsplash.com/photo-1597633425046-08f5110420b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 8,
+      "type": "dog",
+      "origin": "시베리아",
+      "name": "시베리안 허스키",
+      "desc": "시베리안 허스키는 시베리아 고유의 견종이다.",
+      "src": "https://images.unsplash.com/photo-1489924034176-2e678c29d4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 9,
+      "type": "lizard",
+      "origin": "남아시아",
+      "name": "레오파드 게코",
+      "desc": "표범도마뱀붙이는 레오파드 게코, 커먼 레오파드 게코라고도 불린다.",
+      "src": "https://images.unsplash.com/photo-1615798763618-183906cd14b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 10,
+      "type": "lizard",
+      "origin": "호주",
+      "name": "비어디드 드래곤",
+      "desc": "턱수염 도마뱀이라고 불립니다. 경계할 때 턱수염을 크게 부풀리는 것이 특징이에요.",
+      "src": "https://images.unsplash.com/photo-1612049094164-9f016e7a449d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 11,
+      "type": "hamster",
+      "origin": "시리아",
+      "name": "골든햄스터",
+      "desc": "현재 야생개체는 멸종위기를 맞고 있다.",
+      "src": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
+    },
+    {
+      "id": 12,
+      "type": "snake",
+      "origin": "북아메리카",
+      "name": "콘스네이크",
+      "desc": "야행성이며 자신의 머리 크기와 비슷한 크기의 설치류나 작은 조류를 먹이로 먹는다.",
+      "src": "https://images.unsplash.com/photo-1553378860-33f87e5f30b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=500"
     }
   ]
 }
