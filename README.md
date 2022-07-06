@@ -33,3 +33,18 @@
 ![애완동물 검색](https://user-images.githubusercontent.com/66199817/177472959-ed1de269-9cf5-4a5d-9758-042cca7ad930.JPG)
 
 - 애완동물 검색창에 검색을 하면 이름에 문자가 들어간 애완동물의 목록을 보여줍니다.
+
+`게시판 화면`
+
+![게시판 목록](https://user-images.githubusercontent.com/66199817/177473381-e810caf8-e5f2-4bf6-916e-c23b7e3f410e.JPG)
+
+- 게시판 목록을 보여줍니다. (jsonplaceholder 사이트에서 API를 가져와서 사용했습니다.)
+
+![게시판 페이지 클릭](https://user-images.githubusercontent.com/66199817/177473960-e4457025-1fae-453f-acb6-d2d0053f1e74.JPG)
+![게시판 검색](https://user-images.githubusercontent.com/66199817/177473968-ccac8485-c2ed-4071-bf96-842bfa92586d.JPG)
+
+- 게시판 페이지마다 다른 데이터를 보여주고, 검색을 하면 제목에 문자가 들어간 게시글의 목록을 보여줍니다.
+
+![게시판 상세](https://user-images.githubusercontent.com/66199817/177473633-a10aefba-b569-425c-a927-af111f909b55.JPG)
+
+- 게시글 제목을 클릭하면 상세설명을 보여줍니다.
