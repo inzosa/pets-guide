@@ -5,8 +5,6 @@ export const SliderContainer = styled.div`
   position: relative;
   width: 100%;
   height: 255px;
-  border: 3px solid #fc5c7d;
-  background: linear-gradient(#d3cce3, #e9e4f0);
   z-index: 1;
 `;
 
