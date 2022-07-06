@@ -9,6 +9,8 @@
 <img src="https://img.shields.io/badge/styled components-DB7093?style=plastic&logo=styled components&logoColor=black">
 <img src="https://img.shields.io/badge/React Router-CA4245?style=plastic&logo=React Router&logoColor=black">
 
+## [WIKI](https://github.com/inzosa/pets-guide/wiki)
+
 # 주요 기능
 
 `디자인 패턴`
