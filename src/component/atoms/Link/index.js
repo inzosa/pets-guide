@@ -20,9 +20,9 @@ const StyledNavLink = styled(NavLink)`
   }
 `;
 
-export const Link = ({ linkName, linkAddress = linkName, current }) => {
+export const Link = ({ linkName, linkAddress = linkName, current, className }) => {
   return (
-    <StyledNavLink to={`${linkAddress}`} current={current}>
+    <StyledNavLink to={`${linkAddress}`} current={current} className={className}>
       {linkName}
     </StyledNavLink>
   );

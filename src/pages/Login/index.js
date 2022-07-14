@@ -3,18 +3,23 @@ import LoginForm from '../../component/organisms/LoginForm';
 import { LoginWrap } from './style';
 import login_bg from '../../assets/images/login_bg.jpg';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { login } from '../../modules/user';
 
 const Login = () => {
   console.log('Login rendering');
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const loginBtn = (e) => {
+  const loginBtn = async (e) => {
     e.preventDefault();
-    axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
-      const user = res.data.find((user) => user.username === username);
-      console.log(user);
-    });
+    const users = await axios.get('/db/users.json').then((res) => res.data.users);
+    const user = users.find((user) => user.username === username && user.password === password);
+    dispatch(login(user));
+    navigate('/');
   };
 
   const handleUsername = (e) => {
