@@ -12,12 +12,12 @@ const store = createStore(rootReducer);
 
 root.render(
   <>
-    <React.StrictMode>
-      <GlobalStyle />
-      <Provider store={store}>
-        <App />
-      </Provider>
-    </React.StrictMode>
+    {/* <React.StrictMode> */}
+    <GlobalStyle />
+    <Provider store={store}>
+      <App />
+    </Provider>
+    {/* </React.StrictMode> */}
   </>
 );
 

@@ -9,10 +9,16 @@ import { ContentWrap } from '../style';
 import axios from 'axios';
 
 const Post = () => {
-  const [posts, setPosts] = useState([]);
-  const [page, setPage] = useState(1);
-  const [tab, setTab] = useState([]);
   const [search, setSearch] = useState('');
+  const [posts, setPosts] = useState([]);
+  const [page, setPage] = useState(() => {
+    // localStorge에 값이 없다면 1 값이 있다면 불러온다.
+    if (!localStorage.getItem('currentPage')) {
+      return 1;
+    } else {
+      return parseInt(localStorage.getItem('currentPage'));
+    }
+  });
 
   const limit = 20;
   const offset = (page - 1) * limit;
@@ -39,7 +45,7 @@ const Post = () => {
         <PostContainer>
           <PostList posts={posts} limit={limit} offset={offset} />
           <PaginationContainer>
-            <Pagination total={posts.length} limit={limit} page={page} setPage={setPage} tab={tab} setTab={setTab} />
+            <Pagination total={posts.length} limit={limit} page={page} setPage={setPage} />
             <SearchBar handleSearch={searchInput} searchBtn={searchBtn} />
           </PaginationContainer>
         </PostContainer>
