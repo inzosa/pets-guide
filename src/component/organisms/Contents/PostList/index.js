@@ -1,29 +1,30 @@
 import { Link } from '../../../atoms/Link';
+import { StyledTable, StyledTbody, StyledTd, StyledThead, StyledTr } from './style';
 
 const PostList = ({ posts, limit, offset }) => {
   return (
-    <table border={1} style={{ width: '60%', margin: 'auto' }}>
-      <thead>
+    <StyledTable>
+      <StyledThead>
         <tr>
           <th>번호</th>
           <th>제목</th>
           <th>작성자</th>
           <th>작성날짜</th>
         </tr>
-      </thead>
-      <tbody>
+      </StyledThead>
+      <StyledTbody>
         {posts.slice(offset, offset + limit).map((post) => (
-          <tr key={post.id}>
-            <td style={{ textAlign: 'center' }}>{post.id}</td>
-            <td>
+          <StyledTr key={post.id}>
+            <StyledTd>{post.id}</StyledTd>
+            <StyledTd>
               <Link linkName={post.title} linkAddress={post.id} />
-            </td>
-            <td style={{ textAlign: 'center' }}>{`작성자${post.id}`}</td>
-            <td style={{ textAlign: 'center' }}>2022-07-01</td>
-          </tr>
+            </StyledTd>
+            <StyledTd>{`작성자${post.id}`}</StyledTd>
+            <StyledTd>2022-07-01</StyledTd>
+          </StyledTr>
         ))}
-      </tbody>
-    </table>
+      </StyledTbody>
+    </StyledTable>
   );
 };
 

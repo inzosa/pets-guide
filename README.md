@@ -42,7 +42,7 @@
 
 `게시판 화면`
 
-![게시판 목록](https://user-images.githubusercontent.com/66199817/177473381-e810caf8-e5f2-4bf6-916e-c23b7e3f410e.JPG)
+![게시판 목록](https://user-images.githubusercontent.com/66199817/179347688-3acff0b8-8f9c-4c64-bd2b-7b6637eaf963.JPG)
 
 - 게시판 목록을 보여줍니다. (jsonplaceholder 사이트에서 API를 가져와서 사용했습니다.)
 

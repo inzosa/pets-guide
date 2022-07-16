@@ -13,7 +13,7 @@ const PostView = ({ post }) => {
       <PostDate>
         <Text>2021-07-03</Text>
       </PostDate>
-      <PostContent>{post.body}.</PostContent>
+      <PostContent>{post.body}</PostContent>
     </PostContainer>
   );
 };

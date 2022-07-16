@@ -17,7 +17,7 @@ const Header = () => {
     <Container>
       <Logo />
       <Navbar navList={navList} />
-      <LoginLinkWrap>{user ? <LogoutLink onClick={() => dispatch(logout())}>로그아웃</LogoutLink> : <LoginLink linkName="로그인" linkAddress="login" />}</LoginLinkWrap>
+      <LoginLinkWrap>{user ? <LogoutLink onClick={() => dispatch(logout())}>로그아웃</LogoutLink> : <LoginLink linkName="로그인" linkAddress="/login" />}</LoginLinkWrap>
     </Container>
   );
 };
