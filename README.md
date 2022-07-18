@@ -50,7 +50,7 @@
 
 - 20개씩 끊어서 페이지마다 데이터를 다르게 보여줬습니다.
 
-![게시판 검색](https://user-images.githubusercontent.com/66199817/177473968-ccac8485-c2ed-4071-bf96-842bfa92586d.JPG)
+![게시판 검색](https://user-images.githubusercontent.com/66199817/179553378-a5811d2a-4a2e-4245-a1b2-bb80c085b511.JPG)
 
 - 검색을 하면 제목에 문자가 들어간 게시글의 목록을 보여줍니다.
 
