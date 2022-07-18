@@ -10,14 +10,14 @@ const navList = { navListName: ['Home', 'Pets', 'Posts'], navListAddress: ['/', 
 
 const Header = () => {
   console.log('Header rendering');
-  const user = useSelector((state) => state.user.user);
+  const user = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   return (
     <Container>
       <Logo />
       <Navbar navList={navList} />
-      <LoginLinkWrap>{user ? <LogoutLink onClick={() => dispatch(logout())}>로그아웃</LogoutLink> : <LoginLink linkName="로그인" linkAddress="/login" />}</LoginLinkWrap>
+      <LoginLinkWrap>{user.isLogin ? <LogoutLink onClick={() => dispatch(logout())}>로그아웃</LogoutLink> : <LoginLink linkName="로그인" linkAddress="/login" />}</LoginLinkWrap>
     </Container>
   );
 };

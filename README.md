@@ -46,10 +46,13 @@
 
 - 게시판 목록을 보여줍니다. (jsonplaceholder 사이트에서 API를 가져와서 사용했습니다.)
 
-![게시판 페이지 클릭](https://user-images.githubusercontent.com/66199817/177473960-e4457025-1fae-453f-acb6-d2d0053f1e74.JPG)
+![게시판 페이지 클릭](https://user-images.githubusercontent.com/66199817/179551970-67a9cfd6-3ef2-45b4-94a9-7a8c71852681.JPG)
+
+- 20개씩 끊어서 페이지마다 데이터를 다르게 보여줬습니다.
+
 ![게시판 검색](https://user-images.githubusercontent.com/66199817/177473968-ccac8485-c2ed-4071-bf96-842bfa92586d.JPG)
 
-- 게시판 페이지마다 다른 데이터를 보여주고, 검색을 하면 제목에 문자가 들어간 게시글의 목록을 보여줍니다.
+- 검색을 하면 제목에 문자가 들어간 게시글의 목록을 보여줍니다.
 
 ![게시판 상세](https://user-images.githubusercontent.com/66199817/177473633-a10aefba-b569-425c-a927-af111f909b55.JPG)
 
