@@ -14,7 +14,7 @@ const LoginForm = ({ loginBtn, handleUsername, handlePwd, username, password }) 
           <LabelInput htmlFor="password" id="password" label="비밀번호" onChange={handlePwd} type="password" />
         </LabelInputWrap>
       </StyledWrap>
-      <div style={{ color: 'red', paddingBottom: '20px' }}>{!user.isLogin && user.msg}</div>
+      <div style={{ color: 'red', paddingBottom: '20px', marginTop: '-20px' }}>{!user.isLogin && user.msg}</div>
       <StyledBtn onClick={(e) => loginBtn(e)} disabled={username && password ? false : true}>
         로그인
       </StyledBtn>

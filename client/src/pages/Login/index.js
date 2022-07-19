@@ -9,15 +9,15 @@ import { login } from '../../modules/user';
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { user } = useSelector((state) => state);
+  const { isLogin } = useSelector((state) => state.user);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   useEffect(() => {
-    if (user.isLogin) {
+    if (isLogin) {
       navigate('/');
     }
-  }, [user]);
+  }, [isLogin, navigate]);
 
   const loginBtn = (e) => {
     e.preventDefault();
