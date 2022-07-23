@@ -5,8 +5,10 @@ import login_bg from '../../assets/images/login_bg.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../modules/user';
+import app from '../../libs/firebase';
 
 const Login = () => {
+  console.log(app);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { isLogin } = useSelector((state) => state.user);

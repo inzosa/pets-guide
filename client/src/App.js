@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Pets from './pages/Pets';
 import PostDetail from './pages/PostDetail';
 import Login from './pages/Login';
+import Join from './pages/Join';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="posts" element={<Posts />} />
         <Route path="posts/:no" element={<PostDetail />} />
         <Route path="login" element={<Login />} />
+        <Route path="join" element={<Join />} />
       </Routes>
     </BrowserRouter>
   );
