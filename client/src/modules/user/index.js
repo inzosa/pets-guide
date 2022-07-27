@@ -1,28 +1,29 @@
-import axios from 'axios';
+import { authLogin, authLogout } from '../../libs/auth';
 
 const LOGIN = 'user/LOGIN';
 const LOGIN_FAIL = 'user/LOGIN_FAIL';
 const LOGOUT = 'user/LOGOUT';
 
 export const login = (user) => async (dispatch) => {
-  const response = await axios.get('/db/users.json').then((res) => res.data.users.find((data) => data.username === user.username && data.password === user.password));
-  if (!response) {
-    dispatch({
-      type: LOGIN_FAIL,
-    });
-  } else {
-    dispatch({
-      type: LOGIN,
-      payload: response,
-    });
+  try {
+    const response = await authLogin(user.username, user.password);
+    dispatch({ type: LOGIN, payload: response.user });
+  } catch (err) {
+    console.log(err);
+    dispatch({ type: LOGIN_FAIL });
   }
 };
-export const logout = () => ({ type: LOGOUT });
+
+export const logout = () => async (dispatch) => {
+  authLogout();
+  dispatch({ type: LOGOUT });
+};
 
 const initialState = {
   user: null,
-  isLogin: false,
+  isLogin: !!localStorage.getItem('token'),
   msg: '',
+  token: localStorage.getItem('token'),
 };
 
 export default function user(state = initialState, action) {

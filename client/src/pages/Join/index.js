@@ -2,6 +2,7 @@ import { useState } from 'react';
 import join_bg from '../../assets/images/join_bg.jpg';
 import { JoinWrap } from './style';
 import JoinForm from '../../component/organisms/JoinForm';
+import { authJoin } from '../../libs/auth';
 
 const Join = () => {
   const [username, setUsername] = useState('');
@@ -9,6 +10,7 @@ const Join = () => {
 
   const joinBtn = (e) => {
     e.preventDefault();
+    authJoin(username, password);
   };
 
   const handleUsername = (e) => {
