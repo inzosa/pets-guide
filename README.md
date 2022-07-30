@@ -12,6 +12,8 @@
 
 ## [WIKI](https://github.com/inzosa/pets-guide/wiki)
 
+## [NOTION](https://gilded-experience-b42.notion.site/ade9f9dce2704fb5b074c4b45e59c4d1)
+
 # 주요 기능
 
 `디자인 패턴`
