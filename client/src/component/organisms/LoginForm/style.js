@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Text } from '../../atoms/Text';
 import { Button } from '../../atoms/Button';
+import { Link } from '../../atoms/Link';
 
 export const Form = styled.form`
   min-width: 20vw;
@@ -11,6 +12,7 @@ export const Form = styled.form`
   padding: 20px;
   text-align: center;
   background-color: white;
+  position: relative;
 `;
 
 export const StyeldText = styled(Text)`
@@ -43,4 +45,18 @@ export const StyledBtn = styled(Button)`
   box-shadow: 1px 1px 1px 1px grey;
   padding: 13px;
   color: black;
+`;
+
+export const ErrorText = styled.div`
+  color: red;
+  padding-bottom: 20px;
+  margin-top: -20px;
+`;
+
+export const JoinLink = styled(Link)`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  color: #348ac7;
 `;
