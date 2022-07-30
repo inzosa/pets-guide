@@ -3,10 +3,12 @@ import { authLogin, authLogout } from '../../libs/auth';
 const LOGIN = 'user/LOGIN';
 const LOGIN_FAIL = 'user/LOGIN_FAIL';
 const LOGOUT = 'user/LOGOUT';
+const LOAD_USER = 'user/LOAD_USER';
 
 export const login = (user) => async (dispatch) => {
   try {
     const response = await authLogin(user.username, user.password);
+    localStorage.setItem('token', response.user.accessToken);
     dispatch({ type: LOGIN, payload: response.user });
   } catch (err) {
     console.log(err);
@@ -18,6 +20,8 @@ export const logout = () => async (dispatch) => {
   authLogout();
   dispatch({ type: LOGOUT });
 };
+
+export const loadUser = () => ({ type: LOAD_USER });
 
 const initialState = {
   user: null,
@@ -33,20 +37,24 @@ export default function user(state = initialState, action) {
         ...state,
         user: action.payload,
         isLogin: true,
-        msg: '',
       };
     case LOGIN_FAIL:
       return {
         ...state,
-        user: null,
         msg: '아이디 또는 비밀번호가 일치하지않습니다.',
       };
     case LOGOUT:
       return {
         ...state,
-        user: null,
+        user: action.payload,
         isLogin: false,
-        msg: '',
+        token: localStorage.clear(),
+      };
+    case LOAD_USER:
+      return {
+        ...state,
+        isLogin: !!localStorage.getItem('token'),
+        token: localStorage.getItem('token'),
       };
     default:
       return {
