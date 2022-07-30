@@ -8,6 +8,7 @@
 <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=React&logoColor=black">
 <img src="https://img.shields.io/badge/styled components-DB7093?style=plastic&logo=styled components&logoColor=black">
 <img src="https://img.shields.io/badge/React Router-CA4245?style=plastic&logo=React Router&logoColor=black">
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=plastic&logo=Firebase&logoColor=black">
 
 ## [WIKI](https://github.com/inzosa/pets-guide/wiki)
 
