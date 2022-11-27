@@ -23,7 +23,7 @@ export const PostWriter = styled.div`
 `;
 
 export const PostDate = styled.div`
-  margin: 0 20px 0 20px;
+  margin: 0 20px 5px 20px;
   padding: 0 0 10px 10px;
   border-bottom: 1px solid #d9d9d9;
   color: grey;

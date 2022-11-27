@@ -4,15 +4,14 @@ import { Text } from '../../../atoms/Text';
 
 const CardView = ({ data, onToggle, isSelected }) => {
   console.log('CardView rendering');
-
   return (
     <CardViewContainer>
       <CardViewUl>
         {data.map((item) => (
-          <CardViewLi key={item.id} onClick={() => onToggle(item.id)}>
+          <CardViewLi key={item._id} onClick={() => onToggle(item._id)}>
             <CardItem img={item.src} name={item.name} />
 
-            {isSelected[item.id] && (
+            {isSelected[item._id] && (
               <CardDescWrap>
                 <Text>{item.type}</Text>
                 <CardDesc>{item.desc}</CardDesc>

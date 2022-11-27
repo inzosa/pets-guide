@@ -5,6 +5,6 @@ const StyledInput = styled.input`
   border-radius: 5px;
 `;
 
-export const Input = ({ id, className, onChange, type = 'text' }) => {
-  return <StyledInput type={type} id={id} className={className} onChange={onChange} autoComplete={type === 'password' ? 'off' : ''} />;
+export const Input = ({ id, className, onChange, type = 'text', placeholder, defaultValue = '' }) => {
+  return <StyledInput type={type} id={id} className={className} onChange={onChange} autoComplete={type === 'password' ? 'off' : ''} placeholder={placeholder} defaultValue={defaultValue} />;
 };

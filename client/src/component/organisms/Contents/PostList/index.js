@@ -14,13 +14,13 @@ const PostList = ({ posts, limit, offset }) => {
       </StyledThead>
       <StyledTbody>
         {posts.slice(offset, offset + limit).map((post) => (
-          <StyledTr key={post.id}>
-            <StyledTd>{post.id}</StyledTd>
+          <StyledTr key={post._id}>
+            <StyledTd>{post.seq}</StyledTd>
             <StyledTd>
-              <Link linkName={post.title} linkAddress={post.id} />
+              <Link linkName={post.title} linkAddress={post.seq} />
             </StyledTd>
-            <StyledTd>{`작성자${post.id}`}</StyledTd>
-            <StyledTd>2022-07-01</StyledTd>
+            <StyledTd>{post.writer.username}</StyledTd>
+            <StyledTd>{post.createdAt}</StyledTd>
           </StyledTr>
         ))}
       </StyledTbody>

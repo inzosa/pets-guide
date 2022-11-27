@@ -1,4 +1,4 @@
-import { authLogin, authLogout } from '../../libs/auth';
+import axios from 'axios';
 
 const LOGIN = 'user/LOGIN';
 const LOGIN_FAIL = 'user/LOGIN_FAIL';
@@ -7,21 +7,31 @@ const LOAD_USER = 'user/LOAD_USER';
 
 export const login = (user) => async (dispatch) => {
   try {
-    const response = await authLogin(user.username, user.password);
-    localStorage.setItem('token', response.user.accessToken);
-    dispatch({ type: LOGIN, payload: response.user });
+    const response = await axios.post('http://localhost:5000/auth/login', { username: user.username, password: user.password }, { credentials: 'include' });
+    localStorage.setItem('token', response.data.access_token);
+    dispatch({ type: LOGIN, payload: response.data.user });
   } catch (err) {
     console.log(err);
-    dispatch({ type: LOGIN_FAIL });
+    dispatch({ type: LOGIN_FAIL, payload: err.response.data });
   }
 };
 
 export const logout = () => async (dispatch) => {
-  authLogout();
   dispatch({ type: LOGOUT });
 };
 
-export const loadUser = () => ({ type: LOAD_USER });
+export const loadUser = () => async (dispatch) => {
+  try {
+    const response = await axios.get('http://localhost:5000/auth/loadUser', {
+      headers: {
+        Authorization: localStorage.getItem('token'),
+      },
+    });
+    dispatch({ type: LOAD_USER, payload: response.data.user });
+  } catch (err) {
+    console.log(err);
+  }
+};
 
 const initialState = {
   user: null,
@@ -41,7 +51,7 @@ export default function user(state = initialState, action) {
     case LOGIN_FAIL:
       return {
         ...state,
-        msg: '아이디 또는 비밀번호가 일치하지않습니다.',
+        msg: action.payload,
       };
     case LOGOUT:
       return {
@@ -53,6 +63,7 @@ export default function user(state = initialState, action) {
     case LOAD_USER:
       return {
         ...state,
+        user: action.payload,
         isLogin: !!localStorage.getItem('token'),
         token: localStorage.getItem('token'),
       };

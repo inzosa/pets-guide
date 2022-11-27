@@ -2,8 +2,8 @@ import { useState } from 'react';
 import join_bg from '../../assets/images/join_bg.jpg';
 import { JoinWrap } from './style';
 import JoinForm from '../../component/organisms/JoinForm';
-import { authJoin } from '../../libs/auth';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Join = () => {
   const navigate = useNavigate();
@@ -12,11 +12,12 @@ const Join = () => {
 
   const joinBtn = (e) => {
     e.preventDefault();
-    authJoin(username, password)
-      .then(() => {
+    axios
+      .post('http://localhost:5000/auth/signup', { username, password }, { credentials: 'include' })
+      .then((res) => {
         navigate('/');
       })
-      .catch(console.log);
+      .catch((err) => console.log(err));
   };
 
   const handleUsername = (e) => {

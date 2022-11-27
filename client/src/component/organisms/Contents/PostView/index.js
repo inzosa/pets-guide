@@ -1,19 +1,21 @@
+import EditorRead from '../../../../libs/EditorRead';
 import { Text } from '../../../atoms/Text';
-import { PostContainer, PostContent, PostDate, PostTitle, PostWriter } from './style';
+import { PostContainer, PostDate, PostTitle, PostWriter } from './style';
 
 const PostView = ({ post }) => {
+  const writer = post.writer || {};
   return (
     <PostContainer>
       <PostTitle>
         <Text>{post.title}</Text>
       </PostTitle>
       <PostWriter>
-        <Text>{`작성자${post.id}`}</Text>
+        <Text>{writer.username}</Text>
       </PostWriter>
       <PostDate>
-        <Text>2021-07-03</Text>
+        <Text>{post.createdAt}</Text>
       </PostDate>
-      <PostContent>{post.body}</PostContent>
+      <EditorRead content={post.content} />
     </PostContainer>
   );
 };

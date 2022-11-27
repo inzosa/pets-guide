@@ -15,11 +15,19 @@ const Pets = () => {
   const [isSelected, setIsSelected] = useState([]);
 
   useEffect(() => {
-    axios.get('/db/pets.json').then((res) => {
-      const result = res.data.result;
-      if (!type) setPets(result);
-      else setPets(result.filter((pet) => pet.type === type));
-    });
+    axios
+      .get(
+        'http://localhost:5000/pets',
+        {},
+        {
+          withCredentials: true,
+        }
+      )
+      .then((res) => {
+        const result = res.data;
+        if (!type) setPets(result);
+        else setPets(result.filter((pet) => pet.type === type));
+      });
   }, [type]);
 
   // Card 클릭하면 설명 보여주기

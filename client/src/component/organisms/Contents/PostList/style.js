@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledTable = styled.table`
   border-collapse: collapse;
   width: 60%;
-  margin: auto;
+  margin: 10px auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;

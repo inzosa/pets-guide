@@ -5,6 +5,8 @@ import Pets from './pages/Pets';
 import PostDetail from './pages/PostDetail';
 import Login from './pages/Login';
 import Join from './pages/Join';
+import PostWrite from './pages/PostWrite';
+import PostModify from './pages/PostModify';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
         </Route>
         <Route path="posts" element={<Posts />} />
         <Route path="posts/:no" element={<PostDetail />} />
+        <Route path="postsWrite" element={<PostWrite />} />
+        <Route path="postsModify/:no" element={<PostModify />} />
         <Route path="login" element={<Login />} />
         <Route path="join" element={<Join />} />
       </Routes>
