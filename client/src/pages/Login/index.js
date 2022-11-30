@@ -5,6 +5,7 @@ import login_bg from '../../assets/images/login_bg.jpg';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../modules/user';
+import GoogleLogIn from '../../libs/googleLogin';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -35,6 +36,7 @@ const Login = () => {
   return (
     <LoginWrap style={{ backgroundImage: `url(${login_bg})` }}>
       <LoginForm loginBtn={loginBtn} handleUsername={(e) => handleUsername(e)} handlePwd={(e) => handlePwd(e)} username={username} password={password} />
+      <GoogleLogIn />
     </LoginWrap>
   );
 };

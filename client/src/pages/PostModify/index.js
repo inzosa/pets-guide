@@ -33,7 +33,7 @@ const PostModify = () => {
           Authorization: localStorage.getItem('token'),
         },
       })
-      .then((res) => navigate('/posts'));
+      .then(() => navigate('/posts'));
   };
 
   return (

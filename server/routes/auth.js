@@ -35,7 +35,8 @@ router.post('/login', async (req, res) => {
 
 // 게시판 글쓰기 이동 할 때 로그인 확인
 router.post('/access', (req, res) => {
-  const token = req.body.headers.Authorization;
+  const token = req.headers.authorization;
+
   if (!token) {
     res.status(401).send('로그인이 되어있지 않습니다.');
   } else {

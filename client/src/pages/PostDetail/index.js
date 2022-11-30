@@ -60,12 +60,16 @@ const PostDetail = () => {
   const likeBtn = () => {
     if (user.token) {
       axios
-        .post(`http://localhost:5000/like/${no}`, comment, {
-          headers: {
-            Authorization: localStorage.getItem('token'),
-          },
-        })
-        .then((res) => {
+        .post(
+          `http://localhost:5000/like/${no}`,
+          {},
+          {
+            headers: {
+              Authorization: localStorage.getItem('token'),
+            },
+          }
+        )
+        .then(() => {
           setLike(!like);
         })
         .catch((err) => console.log(err));
@@ -91,7 +95,7 @@ const PostDetail = () => {
       .then(() => navigate(0))
       .catch((err) => console.log(err));
   };
-
+  console.log(post);
   return (
     <>
       <Header />

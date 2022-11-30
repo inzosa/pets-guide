@@ -1,5 +1,6 @@
 import { Link } from '../../../atoms/Link';
 import { StyledTable, StyledTbody, StyledTd, StyledThead, StyledTr } from './style';
+import dayjs from 'dayjs';
 
 const PostList = ({ posts, limit, offset }) => {
   return (
@@ -20,7 +21,7 @@ const PostList = ({ posts, limit, offset }) => {
               <Link linkName={post.title} linkAddress={post.seq} />
             </StyledTd>
             <StyledTd>{post.writer.username}</StyledTd>
-            <StyledTd>{post.createdAt}</StyledTd>
+            <StyledTd>{dayjs(post.createdAt).format('YYYY-MM-DD')}</StyledTd>
           </StyledTr>
         ))}
       </StyledTbody>

@@ -45,12 +45,16 @@ const Post = () => {
 
   const writeMoveBtn = () => {
     axios
-      .post('http://localhost:5000/auth/access', {
-        headers: {
-          Authorization: localStorage.getItem('token'),
-        },
-      })
-      .then((res) => navigate('/postsWrite'))
+      .post(
+        'http://localhost:5000/auth/access',
+        {},
+        {
+          headers: {
+            Authorization: localStorage.getItem('token'),
+          },
+        }
+      )
+      .then(() => navigate('/postsWrite'))
       .catch((err) => alert(err.response.data));
   };
   return (

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const LOGIN = 'user/LOGIN';
+
 const LOGIN_FAIL = 'user/LOGIN_FAIL';
 const LOGOUT = 'user/LOGOUT';
 const LOAD_USER = 'user/LOAD_USER';

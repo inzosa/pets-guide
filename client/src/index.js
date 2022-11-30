@@ -8,6 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import ReduxThunk from 'redux-thunk';
 import rootReducer from './modules';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const store = createStore(rootReducer, applyMiddleware(logger, ReduxThunk));
@@ -15,10 +16,12 @@ const store = createStore(rootReducer, applyMiddleware(logger, ReduxThunk));
 root.render(
   <>
     {/* <React.StrictMode> */}
-    <GlobalStyle />
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <GoogleOAuthProvider clientId="467467011406-ohg0p1rralonaqsdv40lum3vbk90nc4p.apps.googleusercontent.com">
+      <GlobalStyle />
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </GoogleOAuthProvider>
     {/* </React.StrictMode> */}
   </>
 );
