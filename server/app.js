@@ -41,6 +41,7 @@ app.use('/pets', require('./routes/pets'));
 app.use('/auth', require('./routes/auth'));
 app.use('/posts', require('./routes/posts'));
 app.use('/like', require('./routes/like'));
+app.use('/oauth', require('./routes/oauth'));
 
 app.listen(5000, () => {
   console.log('Server on!');

@@ -46,6 +46,10 @@ router.post('/access', (req, res) => {
 
 // 로그인한 User 정보 가져오기
 router.get('/loadUser', (req, res) => {
+  const result = req.headers.authorization.indexOf('Bearer');
+  if (result === 0) {
+    return;
+  }
   const token = req.headers.authorization;
   const user = jwt.verify(token, 'secure');
   res.send(user);

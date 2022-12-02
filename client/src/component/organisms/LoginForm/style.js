@@ -3,7 +3,7 @@ import { Text } from '../../atoms/Text';
 import { Button } from '../../atoms/Button';
 import { Link } from '../../atoms/Link';
 
-export const Form = styled.form`
+export const TestDiv = styled.div`
   min-width: 20vw;
   min-height: 40vh;
   border: 1px solid #d9d9d9;
@@ -14,6 +14,8 @@ export const Form = styled.form`
   background-color: white;
   position: relative;
 `;
+
+export const Form = styled.form``;
 
 export const StyeldText = styled(Text)`
   display: block;
