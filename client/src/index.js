@@ -16,7 +16,7 @@ const store = createStore(rootReducer, applyMiddleware(logger, ReduxThunk));
 root.render(
   <>
     {/* <React.StrictMode> */}
-    <GoogleOAuthProvider clientId="467467011406-ohg0p1rralonaqsdv40lum3vbk90nc4p.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENTID}>
       <GlobalStyle />
       <Provider store={store}>
         <App />
